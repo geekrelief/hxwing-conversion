@@ -1,0 +1,26 @@
+package org.aswing.plaf;
+
+import org.aswing.Component;	
+
+class DefaultsDecoratorBase implements DefaultsDecorator {
+	
+	
+	
+	var defaultsOwner:ComponentUI;
+	
+	public function new(){
+		
+	}
+	
+	public function setDefaultsOwner(owner:ComponentUI):Void{
+		defaultsOwner = owner;
+	}
+	
+	public function getDefaultsOwner(c:Component):ComponentUI{
+		if(defaultsOwner){
+			return defaultsOwner;
+		}else{
+			return c.getUI();
+		}
+	}
+}

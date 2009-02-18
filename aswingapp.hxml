@@ -1,0 +1,6 @@
+-swf AsWingApp.swf
+-swf-header 600:400:21:ffffff
+-main AsWingApplication
+-swf-version 10 
+-cp hxwing
+-cp flash_base
